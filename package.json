@@ -1,0 +1,23 @@
+{
+  "name": "ssi-encode",
+  "version": "1.0.4",
+  "description": "ssi middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ssi",
+    "middleware"
+  ],
+  "author": "ykurihara",
+  "license": "ISC",
+  "dependencies": {
+    "defaults": "^1.0.3",
+    "fs": "0.0.1-security",
+    "iconv-lite": "^0.4.23",
+    "jschardet": "^1.6.0",
+    "node-ssi": "^0.3.2",
+    "path": "^0.12.7"
+  }
+}
