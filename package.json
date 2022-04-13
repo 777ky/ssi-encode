@@ -13,7 +13,7 @@
   "author": "ykurihara",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.3",
+    "async": "^3.2.2",
     "defaults": "^1.0.3",
     "extend": "^3.0.2",
     "fs": "0.0.1-security",
