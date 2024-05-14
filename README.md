@@ -38,3 +38,10 @@ ssiEncode({
 ```
 <!-- [![](https://raw.githubusercontent.com/777ky/ssi-encode/image/images/change-20121001.gif)]() -->
 
+
+* 2024/5/14: pathGuideオプションでincludeしているファイルの読み込み開始と終了をコメントで表示する処理を切り替えらるようにした
+```
+ssiEncode({
+  pathGuide: false
+})
+```

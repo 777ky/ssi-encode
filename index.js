@@ -69,7 +69,9 @@ SSI.prototype.resolveIncludes = function(content, options, callback) {
                 }
 
                 // local ADD START
-                innerContent　= '<!-- #SSI-START: '+ssipath+' -->' + innerContent+'<!-- #SSI-END: '+ssipath+' -->';
+                if(options.pathGuide){
+                  innerContent　= '<!-- #SSI-START: '+ssipath+' -->' + innerContent+'<!-- #SSI-END: '+ssipath+' -->';
+                }
                 // local ADD END
 
                 content = content.slice(0, matches.index) + innerContent + content.slice(matches.index + seg.length);
@@ -95,7 +97,8 @@ module.exports = function watchSSI(option){
     baseDir: ".",
     routes: {},
     encoding: "binary",
-    ext: ".html"
+    ext: ".html",
+    pathGuide: true
   })
 
   const ssi = new SSI(option)
